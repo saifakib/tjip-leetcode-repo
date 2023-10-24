@@ -1,5 +1,5 @@
-// TC: 0(N)
-// SC: 0(N)
+// TC: 0(NLogK)
+// SC: 0(NLogK)
 class Solution {
 private: 
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
