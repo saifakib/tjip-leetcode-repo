@@ -1,4 +1,4 @@
-// TC: 0(1)
+// TC: 0(N)
 // SC: 0(1)
 class Solution {
 public:
@@ -24,6 +24,6 @@ public:
         delete(remove_node);
 
         // return dummy head next
-        return cDhead -> next;;
+        return cDhead -> next;
     }
 };
