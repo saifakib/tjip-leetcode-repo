@@ -8,8 +8,7 @@ public:
 
         for(auto str: strs) {
             string original_str = str; 
-            // 0(LlogL) L avarage length of a string
-            sort(str.begin(), str.end());
+            sort(str.begin(), str.end());           // 0(LlogL) L avarage length of a string
             groups[str].push_back(original_str);
         }
 
