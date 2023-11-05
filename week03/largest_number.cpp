@@ -1,14 +1,12 @@
 class Solution {
 private:
     static bool comparator(int &a, int &b) {
-        string sa = to_string(a);
-        string sb = to_string(b);
-        string sab = sa + sb;
-        string sba = sb + sa;
+        string sab = to_string(a) + to_string(b);
+        string sba = to_string(b) + to_string(a);
         return sab > sba;
     }
 public:
-    // TC: 0(nwlogn) 
+    // TC: 0(nwlogn);
     // SC: 0(n)
     string largestNumber(vector<int>& nums) {
         // 0(nwlogn) // n = length of nums && w = avg length of string from nums;
