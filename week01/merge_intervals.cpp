@@ -1,26 +1,19 @@
-
-// TC: 0(NlogN)
+// TC: 0(NlogN) where n size of intervals
 // SC: 0(N)
 class Solution {
 public:
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
-        vector<vector<int>> nOintervals;
+        vector<vector<int>>nonOverlapping;
         sort(intervals.begin(), intervals.end());
-
-        vector<int> newInterval = intervals[0];
-        nOintervals.push_back(newInterval);
+        nonOverlapping.push_back(intervals[0]);
 
         for(auto interval: intervals) {
-            if(newInterval[1] >= interval[0]) {
-                nOintervals[nOintervals.size() - 1][1] = max(newInterval[1], interval[1]);
-                newInterval = nOintervals[nOintervals.size() - 1];
+            if(nonOverlapping.back()[1] >= interval[0]) {
+                nonOverlapping.back()[1] = max(nonOverlapping.back()[1], interval[1]);
+            } else {
+                nonOverlapping.push_back(interval);
             }
-            else {
-                newInterval = interval;
-                nOintervals.push_back(newInterval);
-            }
-        };
-
-        return nOintervals;
+        }
+        return nonOverlapping;
     }
 };
