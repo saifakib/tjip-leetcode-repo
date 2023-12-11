@@ -7,7 +7,7 @@ public:
     vector<int> subordinates;
 };
 */
-// TC: 0(N)
+// TC: O(N)
 class Solution {
 private: 
     int dfs(map<int, Employee*>& maps, int id) {
