@@ -1,5 +1,5 @@
-// TC: 0(2N) // where N is the number of intervals
-// MC: 0(2N) 
+// TC: O(N) // where N is the number of intervals
+// MC: O(N) 
 class Solution {
 public:
     int minMeetingRooms(vector<vector<int>>& intervals) {

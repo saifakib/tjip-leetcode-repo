@@ -1,5 +1,5 @@
-// TC: 0(n)  where n is the size of nums
-// MC: 0(1)
+// TC: O(n)  where n is the size of nums
+// MC: O(1)
 class Solution {
 public:
     int jump(vector<int>& nums) {

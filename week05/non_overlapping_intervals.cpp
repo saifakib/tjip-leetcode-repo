@@ -1,5 +1,5 @@
-// TC: 0(nlogn) // where n is the number of intervals
-// MC: 0(1)
+// TC: O(nlogn) // where n is the number of intervals
+// MC: O(1)
 class Solution {
 public:
     int eraseOverlapIntervals(vector<vector<int>>& intervals) {

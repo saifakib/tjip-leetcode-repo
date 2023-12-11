@@ -1,5 +1,5 @@
-// TC: 0(nlogn) where n is the size of sticks;
-// MC: 0(n)
+// TC: O(nlogn) where n is the size of sticks;
+// MC: O(n)
 class Solution {
 public:
     int connectSticks(vector<int>& sticks) {

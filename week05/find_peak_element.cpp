@@ -1,5 +1,5 @@
 // TC: O(log n)  where n is the size of nums
-// MC: 0(1)
+// MC: O(1)
 
 class Solution {
 public:

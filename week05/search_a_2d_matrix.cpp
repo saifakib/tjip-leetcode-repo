@@ -1,5 +1,5 @@
-// TC: 0(log(m * n))
-// MC: 0(1)
+// TC: O(log(m * n))
+// MC: O(1)
 class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {

@@ -1,5 +1,5 @@
-// TC: (NlogINT_MAX) // where N is the size of dist
-// MC: 0(1)
+// TC: O(NlogINT_MAX) // where N is the size of dist
+// MC: O(1)
 class Solution {
 private: 
     bool isPossible(vector<int>& dist, double hour, int currSpreed) {
