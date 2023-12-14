@@ -9,6 +9,8 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// TC: O(N) // where N is the number of nodes
+// MC: O(N)
 class Solution {
 public:
     TreeNode* replaceValueInTree(TreeNode* root) {

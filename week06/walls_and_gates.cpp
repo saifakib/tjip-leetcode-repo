@@ -1,3 +1,5 @@
+// TC: O(m * n)  where n is the number of rows and m is the number of columns of rooms grid.
+// MC: O(m * n)
 class Solution {
 public:
     void wallsAndGates(vector<vector<int>>& rooms) {
@@ -23,6 +25,5 @@ public:
                 }
             }
         }
-
     }
 };
