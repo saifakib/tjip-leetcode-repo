@@ -1,5 +1,5 @@
 // TC: O(m * n)  where n is the number of rows and m is the number of columns.
-// MC: O(m * n)
+// MC: O(m * n)  call stack
 class Solution {
 private:
     vector<int>dir = {1, 0, -1, 0, 1};
