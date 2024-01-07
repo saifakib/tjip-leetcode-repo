@@ -7,6 +7,8 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
+// O(N) // N is the number of nodes
+// O(N) 
 class Codec {
 public:
     // Encodes a tree to a single string.
