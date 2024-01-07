@@ -9,6 +9,8 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// O(N) // N is the number of nodes
+// O(H) // Tree height
 class Solution {
 private:
     bool validateBST(TreeNode* root, TreeNode* l_min, TreeNode* r_max) {
