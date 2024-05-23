@@ -13,7 +13,7 @@
 // MC: O(logN) 
 class Solution {
 public:
-    int maxSum = INT_MIN / 2;
+    int maxSum;
     int maxPathSum(TreeNode* root) {
         pathSum(root);
         return maxSum;
